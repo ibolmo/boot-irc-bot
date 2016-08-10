@@ -36,7 +36,8 @@ var CHANNELS = [
   '#openshift',
   '#css',
   '#html',
-  '#socket.io'
+  '#socket.io',
+  '##javascript'
 ];
 
 var USERS = [
