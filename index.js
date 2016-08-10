@@ -31,11 +31,12 @@ client.user(process.env.BOT_NICKNAME, process.env.BOT_REALNAME);
 var CHANNELS = [
   '#express',
   '#node.js',
-  '#react',
+  '#reactjs',
   '#redux',
   '#openshift',
   '#css',
-  '#html'
+  '#html',
+  '#socket.io'
 ];
 
 var USERS = [
@@ -80,10 +81,10 @@ CHANNELS.forEach(function(channel){
 })
 
 client.on('message', function(e){
-  if (isTracked(e.nick) && e.to != process.env.BOT_NICKNAME) {
-    notice(e.to + ' (message): ' + e.nick);
+  if (isTracked(e.from) && e.to != ('#' + process.env.BOT_NICKNAME)) {
+    notice(e.from + ' (message): ' + e.from);
     track.recordEvent('message', {
-      user: e.nick,
+      user: e.from,
       channel: e.to
     });
   }
