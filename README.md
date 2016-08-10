@@ -1,3 +1,10 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+# boot-irc-bot
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+```sh
+  git clone https://github.com/ibolmo/boot-irc-bot.git
+  cd boot-irc-bot
+  npm install
+  cp .env.example .env
+  atom .env
+  DEBUG=app* node index.js
+```
