@@ -6,12 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Olmo Maldonado",
+    "email": "ibolmo@gmail.com",
+    "url": "http://www.codergv.org/"
+  },
   "license": "ISC",
   "dependencies": {
+    "express": "~3.4.4",
     "debug": "^2.2.0",
     "dotenv": "^2.0.0",
     "keen-tracking": "^1.0.3",
     "slate-irc": "^0.9.0"
-  }
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "index.js"
 }
